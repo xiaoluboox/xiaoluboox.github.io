@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xiaoluboox视频VIP解析</title>
+	<!-- <meta name="referrer" content="never"> -->
+    <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,全网视频解析,VIP在线解析,视频VIP在线解析,VIP视频在线解析">
+    <meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将她介绍给您的朋友">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/index.css" rel="stylesheet" type="text/css">
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="bookmark" href="./assets/favicon.ico">
+	<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+	</script>
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?3c76c8a51e1c5172f3370cb2ec43c1c3";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	
+    <script type="text/javascript">
+      function dihejk() {
+        var diz = document.getElementById("url").value;
+        var jkurl = document.getElementById("jk");
+        var jk = document.getElementById("jk").selectedIndex;
+        var jkv = jkurl.options[jk].value;
+        var cljurl = document.getElementById("player");
+        cljurl.src = jkv + diz
+      }
+
+      function GetQueryString(name)
+      {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+      }
+      $(function(){
+        if(GetQueryString("url") != null){
+          url = GetQueryString("url")
+          $('#url').val(url)
+          dihejk()
+        }
+
+      })
+
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    
+      <a class="navbar-brand" href="/explain.html" target="_blank">小路云</a>
+    </div>
+   </div><!-- /.container-fluid -->
+    </nav>
+<br>
+<div class="container" style="padding-top:0px;" id="wbk">
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span><select class="form-control input-lg" id="jk">
+			<option value="https://jx.aidouer.net/?url=">爱奇艺 优酷 腾讯视频PC+移动端</option>
+			<option value="https://jx.aidouer.net/?url=">爱奇艺 优酷 腾讯视频PC+移动端</option>
+			<option value="https://chaxun.truechat365.com/?url=">爱奇艺 优酷 腾讯视频PC+移动端</option>
+			<option value="https://jx.playerjy.com/?url=">爱奇艺 优酷 腾讯视频PC+移动端</option>
+			<option value="https://jx.bozrc.com:4433/player/?url=">爱奇艺 优酷 腾讯视频PC</option>			
+			<option value="https://www.1717yun.com/api/?url=">爱奇艺 优酷 腾讯视频PC</option>
+			<option value="https://www.8090g.cn/?url=">爱奇艺 优酷 腾讯视频PC</option>
+			<option value="https://jx.m3u8.tv/jiexi/?url=">爱奇艺 优酷 腾讯视频PC</option>
+			<option value="https://www.h8jx.com/jiexi.php?url=">爱奇艺 优酷 腾讯视频PC</option>
+            </select></div>
+            <br>
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg" style="width: 80px;">播放地址</span><input
+                    class="form-control input-lg" type="search" placeholder="输入播放地址" id="url" autocomplete="off"></div>
+            <br>
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">点击播放</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body">
+            <iframe src="./assets/load.html" id="player" width="100%" height="580px"  allowFullScreen="ture" allowtransparency="true"
+                    frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body"><strong>支持但不限于以下网站视频（爱奇艺App分享的缩地址无法解析，请输入网页版地址）</strong>
+            <div class="lists">
+                <dl>
+                    <dt><a href="https://www.iqiyi.com" target="_blank"><img
+							src="./assets/iqiyi-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.youku.com" target="_blank"><img
+							src="./assets/yk-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.le.com" target="_blank"><img
+							src="./assets/le-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://v.qq.com" target="_blank"><img
+							src="./assets/v-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.tudou.com" target="_blank"><img
+							src="./assets/td-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://tv.sohu.com" target="_blank"><img
+							src="./assets/sohu-logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.56.com" target="_blank"><img
+							src="./assets/56-logo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.ku6.com" target="_blank"><img
+							src="./assets/ku6logo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="https://www.wasu.cn" target="_blank"><img
+							src="./assets/wasulogo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.mgtv.com" target="_blank"><img
+                            src="./assets/hunantvlogo.png"></a>
+					</dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://video.sina.com.cn" target="_blank"><img
+							src="./assets/sinalogo.png"></a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.1905.com" target="_blank"><img
+							src="./assets/1905logo.png"></a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+<a style="color:gray" href="mc.html" target="_blank">粤ICP备00000000号</a>
+&nbsp;&nbsp;<a target="_blank" style="color:gray" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44088102000048"><img src="https://statics.luochenzhimu.com/public/img/home/beian.png" />粤公网安备 0000000000号</a>
+</div>
+</p>
+<br /> 
+</html>
